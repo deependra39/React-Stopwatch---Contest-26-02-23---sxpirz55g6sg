@@ -16,6 +16,7 @@ const App = () => {
 
   const stopTimer = () => {
     clearInterval(intervalRef.current);
+    setCurrentTime(Date.now() - startTime.current);
   };
 
   const resetTimer = () => {
